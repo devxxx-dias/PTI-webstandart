@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assets/CSS/style.css" />
+    <title>Marmoraria Residencial</title>
+  </head>
+  <body>
+    <header>
+        <nav class="nav-bar">
+            <div class="logo">
+                <h1>Residencial <br> Marmoraria</h1>
+            </div>
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a href="#" class="nav-link">Início</a></li>
+                         <li class="nav-item"><a href="#" class="nav-link"> Sobre</a></li>
+                </ul>
+            </div>
+            <div class="login-button">
+                <button><a href="#">Entrar</a></button>
+            </div>
+
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="assets\img\menu_white_36dp.svg" alt=""></button>
+            </div>
+        </nav>
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="#" class="nav-link">Início</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Sobre</a></li>
+            </ul>
+
+            <div class="login-button">
+                <button><a href="#">Entrar</a></button>
+            </div>
+        </div>
+    </header>
+
+    <script src="assets/js/script.js"></script>
+    <main>
+        <section class="empresa">
+            <h2 class="main_subtitulo">Sobre a Empresa</h2>
+            <p>Há mais de 25 anos oferecendo ao público de Arujá e região projetos e soluções residenciais em mármores e granitos totalmente customizados a sua necessidade!</p>
+        </section>
+        <section class="produtos-servicos">
+            <h2 class="main_subtitulo">Produtos e Serviços</h2>
+            <ul class="lista">
+                <li>Realizamos montagens de bancadas em geral, pias, ilhas, lavatórios, pisos.</li>
+                <li>Revestimentos de banheiras, nichos, mesas  e revestimentos de fachadas residenciais.</li>
+               <li>Revestimentos de escadas, bancadas de áreas gourmet, cubas construídas, soleiras, batentes, peitoris.</li>
+            </ul>
+        </section>
+        <section class="vantagens-beneficios">
+            <h2 class="main_subtitulo">Vantagens e Benefícios</h2>
+            <ul class="lista">
+                <li>Condição de utilizar um material de alta resitência e durabilidade.</li>
+                <li>Trazer para o seu projeto a beleza natural das rochas ornamentais.</li>
+                <li>Ou trazer as linhas fabricadas e super resistentes dos granitos importados.</li>
+                <li>Ter o retorno do investimento com anos de uso do material.</li>
+                          </ul>
+        </section>
+        
+        <section class="outras-informacoes">
+            <h2 class="main_subtitulo" >Juntos na Obra</h2>
+            <p>Todo o nosso trabalho é feito presencialmente, e todas as medidas do projeto são confimadas para cetificarmos de entregar o que é esperado!</p>
+        </section>
+
+        <section class="contato">
+            <h2 class="main_subtitulo">Agende seu orçamento conosco!</h2>
+            <form action="processar_formulario.php" method="post">
+                <div class="form-group">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem" name="mensagem" rows="15" cols="65" required></textarea>
+                </div>
+                <button type="submit">Enviar Mensagem</button>
+            </form>
+        </section>
+
+    </main>
+    <footer>
+    <div id="footer_content">
+        <div id="footer_contacts">
+            <h1>Residencial <br> Marmoraria</h1>
+            <p>Torne seu sonhor realidade!</p>
+            <div id="footer_social_medias">
+                <a href="#" class="footer_link" id="instagram"><i class="fa-brands fa-instagram"></i></a>
+
+                <a href="#" class="footer_link" id="facebook"><i class="fa-brands fa-facebook-f"></i></a>
+
+                <a href="#" class="footer_link" id="whatsapp"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>            
+        </div>
+        <ul class="footer-list">
+            <li>
+                <h3>Descubra Mais</h3>
+            </li>
+            <li>
+                <a href="#" class="footer-list-link">Ambiente Externos</a>
+            </li>
+            <li>
+                <a href="#" class="footer-list-link">Tipos de Rochas</a>
+            </li>
+            <li>
+                <a href="#" class="footer-list-link">Consultoria</a>
+            </li>
+        </ul>
+
+            <div id="footer_subscribe">
+                <h3><Inscreva-se>Inscreva-se</Inscreva-se></h3>
+                <p>Entre com o seu email para receber as nossas newsletter!</p>
+                <div id="input-group">
+                    <input type="email" id="email">
+                    <button>
+                        <i class="fa-regular fa-envelope"></i>
+                    </button>
+                </div>
+            </div>       
+       
+
+    </div>  
+    <div id="footer_copyright">
+        &#169
+        2024 all rights reserved
+    </div>
+    </footer>
+  </body>
+</html>
